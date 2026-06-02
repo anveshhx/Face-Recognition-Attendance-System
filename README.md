@@ -1,50 +1,73 @@
 # Face Recognition Attendance System
 
-A real-time attendance management solution that leverages facial recognition and computer vision to automate identity verification and attendance tracking. Designed for accuracy, efficiency, and seamless user management, this project demonstrates the practical application of AI-driven recognition systems in everyday workflows.
+A real-time attendance management system that leverages facial recognition and computer vision to automate attendance tracking. The application identifies registered individuals through a webcam feed, records attendance with timestamps, and detects unrecognized faces for further review.
 
-## Key Features
+## Features
 
-* Real-time face detection and recognition through a live webcam feed
-* Automated attendance recording with precise timestamps
-* Detection and capture of unrecognized individuals
-* Easy onboarding of new users through image-based enrollment
-* Optimized and lightweight computer vision workflow for reliable performance
+* Real-time face detection and recognition
+* Automated attendance logging with timestamps
+* Single-entry attendance marking to prevent duplicates
+* Unknown face detection and image capture
+* Optimized recognition workflow with cooldown intervals
+* Simple and user-friendly interface
 
-## Technologies Used
+## Technology Stack
 
 * Python
 * OpenCV
-* NumPy
 * face_recognition
+* NumPy
 
 ## Project Structure
 
-* `images/` — Repository of known face images
-* `screenshots/` — Application screenshots and demonstrations
-* `unknown_faces/` — Captured images of unidentified individuals
-* `main.py` — Core application and recognition logic
+```
+Face-Recognition-Attendance-System/
+│
+├── main.py
+├── requirements.txt
+├── screenshots/
+├── images/
+├── unknown_faces/
+└── README.md
+```
 
-## Getting Started
-
-### 1. Install Dependencies
+## Installation
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Run the Application
+## Usage
+
+1. Add reference images of registered individuals to the `images` directory.
+2. Run the application:
 
 ```bash
 python main.py
 ```
 
+3. The system will:
+
+   * Detect and recognize registered individuals.
+   * Record attendance automatically.
+   * Save unrecognized faces for review.
+
+## Applications
+
+* Academic institutions
+* Corporate attendance systems
+* Event participant verification
+* Access monitoring solutions
+
 ## Future Enhancements
 
-* Interactive attendance dashboard with analytics
-* Database integration for scalable record management
-* Cloud-based synchronization and backup
-* Support for multiple camera streams and locations
+* Database integration
+* Cloud-based attendance storage
+* Multi-camera support
+* Web dashboard and analytics
+* Role-based authentication
 
 ## Author
 
-**Anvesh**
+Anvesh 
+
