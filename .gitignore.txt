@@ -1,9 +1,5 @@
 attendance.csv
-
 unknown_faces/
-
 __pycache__/
-
 .vscode/
-
 *.pyc
